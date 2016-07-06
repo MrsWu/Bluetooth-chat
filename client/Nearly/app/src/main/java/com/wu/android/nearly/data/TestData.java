@@ -1,4 +1,4 @@
-package com.wu.android.nearly.biz;
+package com.wu.android.nearly.data;
 
 import java.util.ArrayList;
 import java.util.List;

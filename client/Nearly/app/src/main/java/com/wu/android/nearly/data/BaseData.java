@@ -1,4 +1,4 @@
-package com.wu.android.nearly.biz;
+package com.wu.android.nearly.data;
 
 /**
  * Created by Nowy on 2016/7/6.

@@ -1,6 +1,6 @@
 package com.wu.android.nearly.mvp.scan;
 
-import com.wu.android.nearly.biz.BaseData;
+import com.wu.android.nearly.data.BaseData;
 
 import java.util.List;
 

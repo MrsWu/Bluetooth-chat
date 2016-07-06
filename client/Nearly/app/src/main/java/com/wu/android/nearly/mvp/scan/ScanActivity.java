@@ -9,7 +9,7 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 
 import com.wu.android.nearly.R;
-import com.wu.android.nearly.biz.TestData;
+import com.wu.android.nearly.data.TestData;
 import com.wu.android.nearly.mvp.base.NBaseActivity;
 
 import java.util.List;
