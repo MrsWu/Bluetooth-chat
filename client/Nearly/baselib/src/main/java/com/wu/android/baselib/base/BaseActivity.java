@@ -18,7 +18,6 @@ public abstract class BaseActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         AppActivities.pushActivity(this);
 
-        initViews();
     }
 
 
@@ -28,7 +27,6 @@ public abstract class BaseActivity extends AppCompatActivity {
         setStatusBar();
     }
 
-    protected abstract  void initViews();
 
 
     /**

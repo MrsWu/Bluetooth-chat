@@ -9,7 +9,7 @@
         android:supportsRtl="true"
         android:name=".app.NApplication"
         android:theme="@style/AppTheme" >
-        <activity android:name=".ui.MainActivity" >
+        <activity android:name=".mvp.scan.ScanActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
