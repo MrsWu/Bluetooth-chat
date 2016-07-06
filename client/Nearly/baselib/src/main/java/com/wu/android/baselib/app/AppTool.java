@@ -13,8 +13,8 @@ import android.graphics.drawable.Drawable;
 import android.telephony.TelephonyManager;
 import android.text.TextUtils;
 
+import com.wu.android.baselib.log.L;
 import com.wu.android.baselib.model.AppInfo;
-import com.wu.android.baselib.utils.LogUtils;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -175,7 +175,7 @@ public class AppTool {
 	public List< AppInfo> queryAllSDCardAppInfo() {
 		List< AppInfo> appInfos = new ArrayList< AppInfo>(); // 保存过滤查到的AppInfo
 		for (ApplicationInfo app :  queryAllInstallAppInfo()) {
-//			if ((app.flags & ApplicationInfo.FLAG_EXTERNAL_STORAGE) != 0) {
+//			if ((com.wu.android.nearly.app.flags & ApplicationInfo.FLAG_EXTERNAL_STORAGE) != 0) {
 				appInfos.add(getAppInfo(app));
 //			}
 		}
@@ -206,7 +206,7 @@ public class AppTool {
 		try {
 			return context.getPackageManager().getPackageInfo(context.getPackageName(), 0).versionCode;
 		} catch (Exception e) {
-			 LogUtils.e(e.getMessage());
+			 L.e(e.getMessage());
 		}
 
 		return 0;
@@ -217,7 +217,7 @@ public class AppTool {
 		try {
 			name = context.getString(context.getApplicationInfo().labelRes);
 		} catch (Exception e) {
-			 LogUtils.e(e.getMessage());
+			L.e(e.getMessage());
 		}
 
 		if (null == name) {
@@ -231,7 +231,7 @@ public class AppTool {
 		try {
 			return context.getPackageManager().getPackageInfo(context.getPackageName(), 0).versionName;
 		} catch (Exception e) {
-			 LogUtils.e(e.getMessage());
+			L.e(e.getMessage());
 		}
 
 		return "";
@@ -254,7 +254,7 @@ public class AppTool {
 				String[] classNames = className.split("\\.");
 				return classNames[classNames.length - 1];
 			} catch (Exception e) {
-				 LogUtils.e(e.getMessage());
+				L.e(e.getMessage());
 			}
 		}
 

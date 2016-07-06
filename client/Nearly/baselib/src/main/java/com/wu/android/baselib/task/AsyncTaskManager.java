@@ -3,7 +3,7 @@ package com.wu.android.baselib.task;
 
 import android.os.AsyncTask;
 
-import com.wu.android.baselib.utils.LogUtils;
+import com.wu.android.baselib.log.L;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -44,7 +44,7 @@ public class AsyncTaskManager {
 				try {
 					task.cancel(true);
 				} catch (Exception e) {
-					LogUtils.e(e.getMessage());
+					L.e(e.getMessage());
 				}
 			}
 		}
